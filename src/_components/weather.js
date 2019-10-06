@@ -8,7 +8,7 @@ class Weather extends Component {
 
     constructor(props) {
         super(props);
-        Axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + props.city + ',' + props.country + '&APPID=17cc29a664f2e002932ab071549bdc72').then(response => {
+        Axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + props.city + ',' + props.country + '&APPID=YOUR_API_KEY').then(response => {
             this.setState({ ...response.data });
         })
     }
@@ -17,7 +17,7 @@ class Weather extends Component {
 
         if (this.state) {
             if (this.props.country !== this.state.sys.country) {
-                Axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + this.props.city + ',' + this.props.country + '&APPID=17cc29a664f2e002932ab071549bdc72').then(response => {
+                Axios.get('http://api.openweathermap.org/data/2.5/weather?q=' + this.props.city + ',' + this.props.country + '&APPID=YOUR_API_KEY').then(response => {
                     this.setState({ ...response.data });
                 })
             }
