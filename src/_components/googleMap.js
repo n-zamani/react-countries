@@ -29,5 +29,5 @@ const style = {
 }
 
 export default GoogleApiWrapper({
-    apiKey: 'AIzaSyCCYksb6wpNl2MbhiAGYNQZdYz2hFhH-kU'
+    apiKey: 'YOUR_API_KEY'
 })(GoogleMap)
