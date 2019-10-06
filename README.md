@@ -1,5 +1,19 @@
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
+##Installed Packages
+
+### `yarn add mdbreact`
+
+This package is for carousel
+
+### `yarn add axios`
+
+### `yarn add google-maps-react`
+
+### `yarn add node-sass`
+
+### `yarn add react-router-dom`
+
 ## Available Scripts
 
 In the project directory, you can run:
